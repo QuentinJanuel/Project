@@ -9,12 +9,28 @@
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
     </sprites>
+    <sprites name="Block">
+      <sprite>sprites\sprBlock</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="Main">
+      <scripts name="Controls">
+        <script>scripts\scrGetControls.gml</script>
+      </scripts>
       <script>scripts\scrMain.gml</script>
+      <scripts name="Tools">
+        <script>scripts\scrCreateArray.gml</script>
+        <script>scripts\scrBetween.gml</script>
+      </scripts>
+    </scripts>
+    <scripts name="Player">
+      <scripts name="Physics">
+        <script>scripts\scrPlayerInit.gml</script>
+        <script>scripts\scrPlayerMove.gml</script>
+      </scripts>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -23,6 +39,9 @@
     </objects>
     <objects name="Player">
       <object>objects\objPlayer</object>
+    </objects>
+    <objects name="Block">
+      <object>objects\objBlock</object>
     </objects>
   </objects>
   <rooms name="rooms">
